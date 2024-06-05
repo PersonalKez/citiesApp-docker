@@ -17,4 +17,4 @@ services:
       MYSQL_DATABASE: cities 
 
   volumes:
-    todo-mysql-data:
+    cities-mysql:
