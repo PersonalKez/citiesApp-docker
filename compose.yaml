@@ -16,5 +16,5 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: cities 
 
-  volumes:
-    cities-mysql:
+volumes:
+  qcities-mysql:
