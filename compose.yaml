@@ -17,4 +17,4 @@ services:
       MYSQL_DATABASE: cities 
 
 volumes:
-  qcities-mysql:
+  cities-mysql:
