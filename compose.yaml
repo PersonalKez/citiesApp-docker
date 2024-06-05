@@ -1,0 +1,20 @@
+
+services:
+  cities_frontend:
+    image: cities/webapp
+    build: https://github.com/PersonalKez/citiesApp_fe
+
+  cities_backend:
+    image: cities/backend
+    build: https://github.com/PersonalKez/citiesApp_BE
+
+  mysql:
+    image: mysql:8.0
+    volumes:
+      - cities-mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: cities 
+
+  volumes:
+    todo-mysql-data:
