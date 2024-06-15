@@ -2,11 +2,11 @@
 services:
   cities_frontend:
     image: cities/webapp
-    build: https://github.com/PersonalKez/citiesApp_fe
+    build: https://github.com/PersonalKez/citiesApp_fe.git
 
   cities_backend:
     image: cities/backend
-    build: https://github.com/PersonalKez/citiesApp_BE
+    build: https://github.com/PersonalKez/citiesApp_BE.git
 
   mysql:
     image: mysql:8.0
