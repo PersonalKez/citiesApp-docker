@@ -3,6 +3,8 @@ services:
   cities_frontend:
     image: cities/webapp
     build: https://github.com/PersonalKez/citiesApp_fe.git
+    volumes:
+      - ./citiesApp-fe:/usr/share/nginx/html
     ports:
       - 8089:80
 
