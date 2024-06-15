@@ -3,12 +3,15 @@ services:
   cities_frontend:
     image: cities/webapp
     build: https://github.com/PersonalKez/citiesApp_fe.git
+    ports:
+      - 8089:80
+    volumes:
+      - ./citiesApp-fe:/usr/share/nginx/html
 
   cities_backend:
     image: cities/backend
     working_dir: /home/node/app
     build: https://github.com/PersonalKez/citiesApp_BE.git
-    command: node app.js
     volumes:
       - node:/home/node/app
 
