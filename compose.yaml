@@ -12,6 +12,8 @@ services:
     build: https://github.com/PersonalKez/citiesApp_BE.git
     volumes:
       - node:/home/node/app
+    ports:
+      - 3000:3000
 
   mysql:
     image: mysql:8.0
