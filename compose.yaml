@@ -5,8 +5,6 @@ services:
     build: https://github.com/PersonalKez/citiesApp_fe.git
     ports:
       - 8089:80
-    volumes:
-      - ./citiesApp-fe:/usr/share/nginx/html
 
   cities_backend:
     image: cities/backend
