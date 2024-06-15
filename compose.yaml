@@ -6,7 +6,10 @@ services:
 
   cities_backend:
     image: cities/backend
+    working_dir: /home/node/app
     build: https://github.com/PersonalKez/citiesApp_BE.git
+    volumes:
+      - node:/home/node/app
 
   mysql:
     image: mysql:8.0
@@ -18,3 +21,4 @@ services:
 
 volumes:
   cities-mysql:
+  node:
