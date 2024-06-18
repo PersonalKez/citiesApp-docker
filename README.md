@@ -17,7 +17,7 @@ Stack:
 - MYSQL, used everywhere, relatively simple. Sort of regret not using postgres though. 
 - memcached, used everywhere, mostly simple to use. NodeJS lib is a bit spotty though so watch out if you take the same route
 
-TO USE
-docker compose up
-localhost:8089
-enjoy
+TO USE:
+- docker compose up
+- localhost:8089
+- enjoy
