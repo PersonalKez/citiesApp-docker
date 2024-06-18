@@ -17,7 +17,9 @@ services:
 
   mysql:
     image: mysql:8.0
+    command: --init-file /data/application/init.sql
     volumes:
+      - ./init.sql:/data/application/init.sql
       - cities-mysql:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
